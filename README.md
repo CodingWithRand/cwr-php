@@ -1,2 +1,2 @@
-# cwr-php
-My PHP projects are stored here.
+# Welcome to CWR-PHP respository
+This where I mainly store my **PHP** projects. The projects here will probably be related to the website with *form* that takes data from user to the backend written in PHP. And sometimes, it may relate to SQL to store data in database as well. 
