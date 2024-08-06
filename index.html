@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingWithRand's Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1 id="title">CodingWithRand's Opinion Survey Form</h1>
+        <h3 id="subtitle">Put your own opinion here (Don't be afraid to put negative opinion)</h2>
+        <form id="survey-form" action="send.php" method="post">
+            <div class="form-group">
+                <label class="form-label" for="name">Your YouTube Channel Name <span class="required">*</span></label>
+                <input type="text" name="name" id="name" class="form-input" placeholder="Enter your channel name" required>
+                <label class="form-label" for="age">Age <span class="required">*</span></label>
+                <input type="number" name="age" id="age" class="form-input" placeholder="Enter your age" required>
+                <label class="form-label" for="gender">Gender <span class="required">*</span></label>
+                <select class="form-input" name="gender" id="gender">
+                    <option disabled selected>--Select--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                    <option value="Unspecified">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="role">Which option best describes your YouTube role? <span class="required">*</span></label>
+                <select class="form-input" name="role" id="role">
+                    <option disabled selected>--Select--</option>
+                    <option value="Subscriber">Subscriber</option>
+                    <option value="Youtuber">YouTuber</option>
+                    <option value="Viewer">Viewer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="status">How is my channel? (Include all factors, video quality, activities, live streaming, community, etc.) <span class="required">*</span></label>
+                <div class="radio-btn">
+                    <input type="radio" value="Very Good" name="status" required>
+                    <label class="radio-btn-label">Very good (Thanks!)</label>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" value="Good" name="status" required>
+                    <label class="radio-btn-label">Good</label>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" value="Okay" name="status" required>
+                    <label class="radio-btn-label">Okay</label>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" value="Bad" name="status" required>
+                    <label class="radio-btn-label">Bad</label>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" value="Very Bad" name="status" required>
+                    <label class="radio-btn-label">Very bad</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="future-content">What kind of contents would you like to see in the future?</label>
+                <div class="checkbox-btn">
+                    <input type="checkbox" value="Roblox" name="future-content[]">
+                    <label class="checkbox-btn-label">Gaming (Roblox)</label>
+                </div>
+                <div class="checkbox-btn">
+                    <input type="checkbox" value="Gaming" name="future-content[]">
+                    <label class="checkbox-btn-label">Gaming (Other Games)</label>
+                </div>
+                <div class="checkbox-btn">
+                    <input type="checkbox" value="Tutorial" name="future-content[]">
+                    <label class="checkbox-btn-label">Tutorial Videos</label>
+                </div>
+                <div class="checkbox-btn">
+                    <input type="checkbox" value="Coding" name="future-content[]">
+                    <label class="checkbox-btn-label">Coding & Programming</label>
+                </div>
+                <div class="checkbox-btn">
+                    <input type="checkbox" value="Donate" name="future-content[]">
+                    <label class="checkbox-btn-label">PLS DONATE Donating Livestream</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="feedback">Feedback</label>
+                <textarea id="feedback" name="feedback" class="form-input" placeholder="Enter your opinion" rows="5"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <a href="login.html" style="color: lightgray;">Admin Panel</a>
+</body>
+</html>

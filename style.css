@@ -1,0 +1,100 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1, h3{
+    margin: 0;
+}
+
+h3{
+    font-weight: normal;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#title{
+    margin: 1rem 0;
+}
+
+#title, #subtitle{
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.required{
+    color: red;
+    user-select: none;
+}
+
+#survey-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 80%;
+    margin: 2rem 0;
+}
+
+.form-label{
+    font-weight: bold;
+}
+.form-input{
+    padding: 0.25rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: large;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.radio-btn-label, .checkbox-btn-label{
+    color: grey;
+}
+button[type="submit"]{
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: large;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#reg-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    background-color: lightgray;
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+@media (max-width: 640px) {
+   #title{
+        font-size: 1.5rem;
+   }
+   #subtitle{
+        font-size: 0.75rem;
+   }
+   .form-label, .radio-btn-label{
+        font-size: small;
+   }
+   .form-input{
+        font-size: smaller;
+   }
+   #reg-box{
+        padding: 3rem;
+   }
+}

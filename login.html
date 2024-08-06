@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container" style="height: 100vh;">
+        <div id="reg-box">
+            <h1 id="title">Admin Panel</h1>
+            <form id="reg-form" action="admin.php" method="post">
+                <div class="form-group">
+                    <label class="form-label" for="username">Username</label>
+                    <input type="text" name="username" id="username" class="form-input" required>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label class="form-label" for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-input" required>
+                </div>
+                <br/>
+                <div class="form-group">    
+                    <button type="submit" class="btn">Login</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
